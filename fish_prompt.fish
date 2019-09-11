@@ -1025,6 +1025,10 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     __bobthefish_prompt_status $last_status
     __bobthefish_prompt_vi
 
+    # Add Logo
+    __bobthefish_start_segment brgrey white --bold 
+    echo -ns \uf179 ' '
+
     # Containers and VMs
     __bobthefish_prompt_vagrant
     __bobthefish_prompt_docker
