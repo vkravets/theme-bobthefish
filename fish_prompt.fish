@@ -1020,14 +1020,14 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
 
     # Start each line with a blank slate
     set -l __bobthefish_current_bg
+    
+    # Add Logo
+    __bobthefish_start_segment brgrey white --bold 
+    echo -ns \uf179 ' '
 
     # Status flags and input mode
     __bobthefish_prompt_status $last_status
     __bobthefish_prompt_vi
-
-    # Add Logo
-    __bobthefish_start_segment brgrey white --bold 
-    echo -ns \uf179 ' '
 
     # Containers and VMs
     __bobthefish_prompt_vagrant
